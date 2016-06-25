@@ -1,0 +1,25 @@
+$enable-flex:		true;
+
+$brand-primary:		#6CCB6E;
+$brand-success:		#3ED641;
+$brand-info:		#7BB6CC;
+$brand-warning:		#F7E84F;
+$brand-danger:		#FF4C4C;
+
+$body-bg:			#333;
+$body-color:		#cdcdcd;
+
+// bootstrap
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+@import 'variables';
+@import 'login';
+
+.app-container {
+	@extend .container;
+
+	&.full-page {
+		@extend .text-xs-center;
+		align-items: center;
+	}
+}

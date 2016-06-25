@@ -1,0 +1,16 @@
+.login-form {
+	max-width: $streamline-width;
+	margin: 0 auto;
+}
+
+.login-form .username {
+	border-radius: $border-radius $border-radius 0 0;
+}
+
+.login-form .password {
+	border-radius: 0 0 $border-radius $border-radius;
+}
+
+.login-form .field-group {
+	margin-bottom: $form-group-margin-bottom;
+}

@@ -1,0 +1,27 @@
+filter:
+  excluded_paths:
+    - 'tests/*'
+    - 'bootstrap/*'
+    - 'config/*'
+    - 'database/*'
+    - 'public/*'
+    - 'resources/*'
+checks:
+  php: true
+build:
+  environment:
+    php:
+      version: 7.0
+      ini:
+          'date.timezone': 'Europe/London'
+  tests:
+    override:
+      -
+        command: './vendor/phpunit/phpunit/phpunit --coverage-clover=/tmp/coverage.xml'
+        coverage:
+          file: '/tmp/coverage.xml'
+          format: 'php-clover'
+tools:
+  php_code_sniffer:
+    config:
+      standard: "PSR2"
