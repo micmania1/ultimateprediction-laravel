@@ -1,0 +1,14 @@
+module.exports = {
+
+	'signup': function(browser) {
+	},
+
+	'redirectLoggedInUsers': function(browser) {
+	},
+
+	'logout': function(browser) {
+	},
+
+	'login': function(browser) {
+	}
+}

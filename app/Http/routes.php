@@ -16,7 +16,6 @@ $appRoute = function() {
 };
 
 $homeRoute = function() {
-	Auth::logout();
 	return redirect('');
 };
 
@@ -24,6 +23,7 @@ $homeRoute = function() {
 Route::get('/', $appRoute);
 Route::get('signup', $appRoute);
 Route::get('lostpassword', $appRoute);
+Route::get('predictions', $appRoute);
 
 // Authentication routes...
 Route::get('login', $homeRoute);

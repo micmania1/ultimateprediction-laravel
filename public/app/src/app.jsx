@@ -3,12 +3,11 @@ import { UPDATE_CSRF_TOKEN } from './actions';
 import { connect } from 'react-redux';
 
 
-const Application = ({csrfToken, updateCsrfToken, children}) => {
+const Application = ({csrfToken, updateCsrfToken, children}) => (
 	<div className="container">
-		<h1>Yup</h1>
 		{children}
 	</div>
-}
+)
 
 export const APP_ROUTES = {
 	login: '/',
@@ -16,7 +15,6 @@ export const APP_ROUTES = {
 	predictions: '/predictions',
 	standings: '/standings'
 }
-
 
 const App = connect()(Application);
 export default App;

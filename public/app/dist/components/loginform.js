@@ -16,8 +16,6 @@ var _reduxForm = require('redux-form');
 
 var _auth = require('../services/auth');
 
-var _auth2 = _interopRequireDefault(_auth);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27,7 +25,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var submit = function submit(values, dispatch) {
-	return _auth2.default.attemptLogin(values, dispatch);
+	(0, _auth.attemptLogin)(values, dispatch);
 };
 
 var LoginForm = function (_React$Component) {

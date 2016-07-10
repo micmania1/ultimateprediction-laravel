@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
-import AuthService from '../services/auth';
+import { attemptSignup } from '../services/auth';
 
 const submit = (values, dispatch) => {
-	return AuthService.attemptSignup(values, dispatch);
+	return attemptSignup(values, dispatch);
 }
 
 class SignupForm extends React.Component {

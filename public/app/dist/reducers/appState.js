@@ -10,14 +10,8 @@ var _reduxForm = require('redux-form');
 
 var _actions = require('../actions');
 
-var initialAuthState = {
-	user: null,
-	lastActiveTime: null,
-	error: null
-};
-
 function authReducer() {
-	var state = arguments.length <= 0 || arguments[0] === undefined ? initialAuthState : arguments[0];
+	var state = arguments.length <= 0 || arguments[0] === undefined ? window.app.auth : arguments[0];
 	var action = arguments[1];
 
 	switch (action.type) {

@@ -19,15 +19,9 @@ var Application = function Application(_ref) {
 	var csrfToken = _ref.csrfToken;
 	var updateCsrfToken = _ref.updateCsrfToken;
 	var children = _ref.children;
-
-	_react2.default.createElement(
+	return _react2.default.createElement(
 		'div',
 		{ className: 'container' },
-		_react2.default.createElement(
-			'h1',
-			null,
-			'Yup'
-		),
 		children
 	);
 };

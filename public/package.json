@@ -25,6 +25,7 @@
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
     "redux-form": "^5.2.5",
+    "redux-thunk": "^2.1.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

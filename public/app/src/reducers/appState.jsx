@@ -2,13 +2,7 @@ import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import { LOGIN_SUCCESS, LOGIN_FAILED, UPDATE_CSRF_TOKEN } from '../actions';
 
-const initialAuthState = {
-	user: null,
-	lastActiveTime: null,
-	error: null
-};
-
-function authReducer(state = initialAuthState, action) {
+function authReducer(state = window.app.auth, action) {
 	switch(action.type) {
 		case LOGIN_SUCCESS:
 			return Object.assign({}, state, {

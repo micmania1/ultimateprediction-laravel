@@ -13,7 +13,14 @@
 		<div id="app"></div>
 		<script>
 			var app = {
-				csrfToken: '{{ csrf_token() }}'
+				csrfToken: '{{ csrf_token() }}',
+				auth: {
+					user: {
+						name: '{{ (null !== Auth::user()) ? Auth::user()->name : null }}',
+						id: '{{ (null !== Auth::id()) ?: null }}',
+						lastActiveTime: Date.now()
+					}
+				}
 			};	
 		</script>
 		<script src="js/bundle.js"></script>
